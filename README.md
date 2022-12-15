@@ -1,7 +1,13 @@
-## TODO
+# Dogwood Springs Campground
 
-set up custom domain
-set up readme
-add where to send inquiry
-add to google maps
-add address to page?
+## About
+
+Website for Dogwood Springs Campground: TODO url
+
+## Development
+
+To run locally after cloning this repository and running `npm install`, run `npm start`. A local preview of the site will run at `http://localhost:3000/`.
+
+`index.html` is the main entry point for the site.
+
+This website is served through GitHub Pages. When changes are pushed to `main`, the `deploy.yml` workflow will run and deploy the changes.
