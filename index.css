@@ -70,3 +70,10 @@ h1, p, button {
     padding: 0 16px;
   }
 }
+
+/* Large screen */
+@media (min-width: 1000px) {
+  #lake {
+    max-height: 50vh;
+  }
+}
