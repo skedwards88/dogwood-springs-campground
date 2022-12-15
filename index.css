@@ -1,0 +1,75 @@
+
+body {
+  font-family: 'Playfair Display', Georgia, serif;
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    "title"
+    "image"
+    "info"
+    "weather";
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: auto 1 fr 1fr auto; */
+  background-color: rgb(240 240 240);
+  overflow: scroll;
+}
+
+h1, p, button {
+  all: unset;
+}
+
+#title {
+  grid-area: title;
+  border: 1px solid rgb(21 21 21);
+  padding: 8px 16px;
+  width: fit-content;
+  display: flex;
+  justify-self: center;
+  margin: 24px;
+  font-size: 24px;
+}
+
+#lake {
+  grid-area: image;
+  max-width: 100%;
+  max-height: 50vh;
+}
+
+#info {
+  grid-area: info;
+  max-width: 100%;
+  background-color: rgb(61, 95, 214);
+  color: rgb(240 240 240);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+
+#weather {
+  grid-area: weather;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  align-items: center;
+  padding: 16px 0;
+}
+
+/* Landscape, small screen */
+@media (orientation: landscape) and (max-width: 1000px) {  body {
+    grid-template-areas:
+      "title title"
+      "image info"
+      "weather weather";
+  }
+
+  #lake {
+    /* height: 50%; */
+    /* width: 50%; */
+  }
+  #info {
+    padding: 0 16px;
+  }
+}
